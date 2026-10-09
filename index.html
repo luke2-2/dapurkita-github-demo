@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Dapur Kita – Peralatan Rumah Tangga</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@600;800&family=Nunito+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f3f7f4;--ink:#16302b;--mut:#506560;--card:#fff;--pri:#1f6f5c;--acc:#f2b632;--line:#d5e2dc;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0f1d1a;--ink:#e8f2ee;--mut:#9db5ad;--card:#172a26;--pri:#4fc3a1;--acc:#f2b632;--line:#26403a}}
+:root[data-theme="dark"]{--bg:#0f1d1a;--ink:#e8f2ee;--mut:#9db5ad;--card:#172a26;--pri:#4fc3a1;--acc:#f2b632;--line:#26403a}
+*{box-sizing:border-box;margin:0}
+body{background:var(--bg);color:var(--ink);font:400 16px/1.6 'Nunito Sans',system-ui,sans-serif}
+h1,h2,h3{font-family:Fraunces,Georgia,serif;line-height:1.15}
+.wrap{max-width:1040px;margin:0 auto;padding:0 20px}
+header{display:flex;justify-content:space-between;align-items:center;padding:18px 0;gap:12px;flex-wrap:wrap}
+.logo{font:800 24px Fraunces,Georgia,serif;color:var(--pri)}
+nav a{color:var(--ink);text-decoration:none;margin-left:18px;font-weight:600}
+nav a:hover,nav a:focus-visible{color:var(--pri);text-decoration:underline}
+.hero{display:grid;grid-template-columns:1.2fr 1fr;gap:32px;align-items:center;padding:36px 0 56px}
+.hero h1{font-size:clamp(34px,6vw,58px);font-weight:800}
+.hero p{color:var(--mut);margin:16px 0 24px;max-width:46ch}
+.btn{display:inline-block;background:var(--acc);color:#2a2000;font-weight:700;padding:12px 22px;border-radius:999px;text-decoration:none;border:0;cursor:pointer;font-size:16px}
+.btn:focus-visible,button:focus-visible,select:focus-visible{outline:3px solid var(--pri);outline-offset:2px}
+.panel{background:var(--pri);border-radius:28px;padding:28px;color:#fff;display:grid;grid-template-columns:repeat(3,1fr);gap:10px;text-align:center}
+.panel span{font-size:44px;display:block}
+.panel small{font-weight:600}
+.promo{background:var(--acc);color:#2a2000;border-radius:16px;padding:14px 20px;font-weight:700;text-align:center;margin-bottom:48px}
+h2{font-size:30px;margin-bottom:6px}
+.sub{color:var(--mut);margin-bottom:20px}
+.tools{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:20px}
+.tools button{background:var(--card);color:var(--ink);border:1px solid var(--line);border-radius:999px;padding:8px 16px;font:600 15px 'Nunito Sans',sans-serif;cursor:pointer}
+.tools button[aria-pressed="true"]{background:var(--pri);color:#fff;border-color:var(--pri)}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:16px}
+.item{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:18px;display:flex;flex-direction:column;gap:6px}
+.item .ic{font-size:46px}
+.item h3{font-size:18px}
+.item .cat{color:var(--mut);font-size:14px}
+.item .price{font-weight:700;color:var(--pri);font-size:18px}
+.item button{margin-top:auto;background:var(--pri);color:#fff;border:0;border-radius:10px;padding:9px;font:700 15px 'Nunito Sans',sans-serif;cursor:pointer}
+.why{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px;margin:56px 0}
+.why div{border-left:4px solid var(--acc);padding:4px 0 4px 14px}
+.why p{color:var(--mut)}
+.cart{position:sticky;bottom:calc(12px + env(safe-area-inset-bottom,0px));background:var(--ink);color:var(--bg);border-radius:16px;padding:12px 18px;display:flex;justify-content:space-between;align-items:center;margin:32px 0;gap:12px}
+.cart button{background:var(--acc);color:#2a2000;border:0;border-radius:999px;padding:8px 16px;font:700 15px 'Nunito Sans',sans-serif;cursor:pointer}
+footer{border-top:1px solid var(--line);padding:28px 0 40px;color:var(--mut);display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+@media(max-width:720px){.hero{grid-template-columns:1fr}nav a{margin:0 14px 0 0}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header>
+  <div class="logo">Dapur Kita</div>
+  <nav><a href="#produk">Produk</a><a href="#kenapa">Keunggulan</a><a href="#kontak">Kontak</a></nav>
+</header>
+
+<section class="hero">
+  <div>
+    <h1>Perlengkapan rumah yang awet, harga bersahabat.</h1>
+    <p>Dari panci sampai sapu, semua kebutuhan dapur dan kebersihan rumah ada di satu toko. Gratis ongkir untuk belanja di atas Rp150.000.</p>
+    <a class="btn" href="#produk">Lihat produk</a>
+  </div>
+  <div class="panel" aria-hidden="true"><div><span>🍳</span><small>Dapur</small></div><div><span>🧹</span><small>Bersih</small></div><div><span>🛏️</span><small>Kamar</small></div></div>
+</section>
+
+<div class="promo">Promo Oktober: diskon 15% untuk semua peralatan masak!</div>
+
+<section id="produk">
+  <h2>Produk pilihan</h2>
+  <p class="sub">Pilih kategori, lalu tambahkan ke keranjang.</p>
+  <div class="tools" id="filters"></div>
+  <div class="grid" id="grid"></div>
+  <div class="cart"><span id="cartInfo">Keranjang kosong</span><button id="resetBtn" type="button">Kosongkan</button></div>
+</section>
+
+<section class="why" id="kenapa">
+  <div><h3>Kualitas terjamin</h3><p>Setiap produk diperiksa sebelum dikirim, garansi tukar 7 hari.</p></div>
+  <div><h3>Kirim cepat</h3><p>Pesanan sebelum pukul 14.00 dikirim di hari yang sama.</p></div>
+  <div><h3>Harga jujur</h3><p>Tanpa biaya tersembunyi. Harga di sini adalah harga akhir.</p></div>
+</section>
+
+<footer id="kontak">
+  <div><strong>Dapur Kita</strong><br>Jl. Melati No. 12, Semarang<br>Buka setiap hari, 08.00–20.00</div>
+  <div>WhatsApp: 0812-0000-1234<br>Email: halo@dapurkita.example</div>
+</footer>
+</div>
+
+<script>
+const products=[
+{n:"Panci Stainless 24 cm",c:"Dapur",p:185000,i:"🥘"},
+{n:"Wajan Anti Lengket",c:"Dapur",p:129000,i:"🍳"},
+{n:"Set Pisau Dapur 5 pcs",c:"Dapur",p:95000,i:"🔪"},
+{n:"Rice Cooker 1,8 L",c:"Elektronik",p:349000,i:"🍚"},
+{n:"Blender Serbaguna",c:"Elektronik",p:275000,i:"🥤"},
+{n:"Setrika Uap",c:"Elektronik",p:225000,i:"♨️"},
+{n:"Sapu & Pengki Set",c:"Kebersihan",p:48000,i:"🧹"},
+{n:"Ember Plastik 12 L",c:"Kebersihan",p:32000,i:"🪣"},
+{n:"Kain Pel Microfiber",c:"Kebersihan",p:39000,i:"🧽"},
+{n:"Rak Piring Lipat",c:"Penyimpanan",p:89000,i:"🍽️"},
+{n:"Toples Kaca 3 pcs",c:"Penyimpanan",p:75000,i:"🫙"},
+{n:"Kotak Baju Susun",c:"Penyimpanan",p:115000,i:"🧺"}
+];
+const cats=["Semua",...new Set(products.map(x=>x.c))];
+let active="Semua",count=0,total=0;
+const rp=n=>"Rp"+n.toLocaleString("id-ID");
+const fEl=document.getElementById("filters"),gEl=document.getElementById("grid"),cEl=document.getElementById("cartInfo");
+function render(){
+  fEl.innerHTML="";
+  cats.forEach(c=>{const b=document.createElement("button");b.type="button";b.textContent=c;b.setAttribute("aria-pressed",c===active);b.onclick=()=>{active=c;render()};fEl.appendChild(b)});
+  gEl.innerHTML="";
+  products.filter(x=>active==="Semua"||x.c===active).forEach(x=>{
+    const d=document.createElement("div");d.className="item";
+    d.innerHTML=`<div class="ic">${x.i}</div><div class="cat">${x.c}</div><h3>${x.n}</h3><div class="price">${rp(x.p)}</div>`;
+    const b=document.createElement("button");b.type="button";b.textContent="Tambah";
+    b.onclick=()=>{count++;total+=x.p;cart()};d.appendChild(b);gEl.appendChild(d);
+  });
+}
+function cart(){cEl.textContent=count?`${count} barang · ${rp(total)}`:"Keranjang kosong"}
+document.getElementById("resetBtn").onclick=()=>{count=0;total=0;cart()};
+render();
+</script>
+</body>
+</html>
